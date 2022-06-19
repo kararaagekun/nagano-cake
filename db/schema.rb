@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(version: 2022_06_19_071143) do
 
   create_table "orders", force: :cascade do |t|
     t.integer "customer_id"
-    t.string "postal_code"
+    t.string "post_code"
     t.string "address"
     t.string "name"
-    t.integer "shipping_cost"
-    t.integer "total_payment"
+    t.integer "total_money"
     t.integer "payment_method"
     t.integer "status"
+    t.integer "postage"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
